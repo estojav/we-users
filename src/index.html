@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <div class="container">
+        <div class="error"></div>
+        <div class="search">
+            <h2>Otsi kasutajat</h2>
+            <form class="search-form">
+                <input type="text" name="searchTerm" placeholder="Sisesta kasutajanimi" required />
+                <button type="submit" class="button button--primary search__submit">Otsi</button>
+                <button type="button" class="button button--primary search__reset">Tühista</button>
+            </form>
+        </div>
+        <div class="users__top">
+            <button type="button" class="button button--primary users__add">Lisa uus kasutaja</button>
+        </div>
+        <div class="users"></div>
+    </div>
+    <div class="users__card" style="display: none" id="userTemplate">
+        <div class="user__actions">
+            <button type="button" class="button button--secondary button--sm user__edit-btn">Muuda</button>
+            <button type="button" class="button button--secondary button--sm user__remove-btn">Kustuta</button>
+        </div>
+        <div class="users__card-inner">
+            <form action="#" class="user__form">
+                <div class="user__form-field">
+                    <label class="user__form-label"></label>
+                    <input class="user__form-input" />
+                </div>
+                <div class="user__form-actions">
+                    <button type="submit" class="button button--primary form__submit">Salvesta</button>
+                    <button type="button" class="button button--primary form__cancel">Tühista</button>
+                </div>
+            </form>
+            <div class="user__data">
+                <p class="user__data-item">
+                    <span class="user__data-item__name"></span>
+                    <span class="user__data-item__value"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="confirmation">
+        <div class="confirmation__inner">
+            <p class="confirmation__text">Oled sa ikka kindel?</p>
+            <div class="confirmation__actions">
+                <button type="button" class="button button--primary button--confirm">Jah, täiesti kindel</button>
+                <button type="button" class="button button--secondary button--cancel">Mul pole õrna aimugi</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

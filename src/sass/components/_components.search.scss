@@ -1,0 +1,32 @@
+.search {
+  margin: 15px;
+  background: #FFF;
+  padding: 30px;
+  @include mq($screen-sm, max) {
+    margin: 0;
+  }
+  &__submit {
+    @include mq($screen-sm, max) {
+      display: block;
+      width: 100%;
+      margin: 10px 0 0 0;
+    }
+  }
+  &__reset {
+    display: none;
+    background: #222;
+    &.visible {
+      display: inline-block;
+    }
+  }
+  input {
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 0;
+    border: 1px solid #d2d2d2;
+    @include mq($screen-sm, max) {
+      width: calc(100% - 32px);
+    }
+  }
+  
+}

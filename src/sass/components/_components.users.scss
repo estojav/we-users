@@ -1,0 +1,65 @@
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  &__card {
+    background: #FFF;
+    width: calc(33.3% - 30px);
+    margin: 15px;
+    @include mq($screen-md, max) {
+      width: calc(50% - 30px);
+    }
+    @include mq($screen-sm, max) {
+      width: 100%;
+      margin: 15px 0;
+    }
+    &-inner {
+      padding: 30px;
+    }
+  }
+  &__data-label {
+    font-weight: 700;
+  }
+  &__top {
+    margin: 30px 15px 15px 15px;
+  }
+  &__add {
+    background: #222;
+    @include mq($screen-sm, max) {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+.user {
+  &__data {
+    &-item {
+      &__name {
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+    }
+  }
+  &__form {
+    &-field {
+      display: flex;
+      margin: 10px 0;
+    }
+    &-label {
+      text-transform: capitalize;
+      flex: 0 0 30%;
+      font-weight: 700;
+    }
+    &-input {
+      border-radius: 0;
+      border: 1px solid #d2d2d2;
+      padding: 5px 10px;
+    }
+    &-actions {
+      margin: 20px 0 0 0;
+    }
+  }
+  &__actions {
+    padding: 30px 30px 0 30px;
+  }
+}
