@@ -8,11 +8,11 @@ for installing dependencies, starting the appropriate scripts, and building your
 ### Quick Start
 Clone the repo:
 
-    git clone https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate.git
+    git clone https://github.com/estojav/we-users.git
 
 Navigate to the project folder:
 
-    cd webpack-sass-bootstrap-boilerplate
+    cd we-users
 
 Install all packages and dependencies required for this project:
 
